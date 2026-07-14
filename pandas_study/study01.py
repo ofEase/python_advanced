@@ -19,7 +19,8 @@ def review_colum():
     df_original.insert(sex_index - 1, '生日', value=birthday)
 
     series_name = df_original[df_original["姓名"].str.contains("刚")]
-    print(series_name.head())
+    
+    print(series_name.sample(11))
 
 if __name__ == "__main__":
     review_colum()
